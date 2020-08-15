@@ -240,3 +240,7 @@ return <button onClick={hello("world")}>button</button>;
 - This can be utilized in defining generic functionality that can be customized with parameters
 
 **Do not define components inside components:** provides no benefits and leads to problems
+
+
+## From exercises
+* Remember that the correct way of updating state stored in complex data structures like objects and arrays is to make a copy of the state.

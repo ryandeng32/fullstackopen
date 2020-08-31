@@ -13,16 +13,7 @@ const App = ({ saved_notes }) => {
   const [errorMessage, setErrorMessage] = useState(null);
 
   useEffect(() => {
-    noteService.getAll().then((res) =>
-      setNotes(
-        res.data.concat({
-          id: 1000,
-          content: "HTML is fuck",
-          date: "2019-05-30T17:30:31.098Z",
-          important: true,
-        })
-      )
-    );
+    noteService.getAll().then((res) => setNotes(res.data));
   }, []);
 
   const addNote = (e) => {
